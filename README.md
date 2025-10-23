@@ -214,6 +214,28 @@ git log --oneline --graph
 Material criado para fins educacionais na aula prática de **Git Local**,  
 ministrada por *Anderson R. M. Gomes* 🧑‍🏫
 
+#  Integração do Git Local ao GitHub
+
+##  Como integrar o Git Local ao GitHub
+Para conectar o repositório local ao GitHub, primeiro é preciso clonar ou criar um repositório. Se já existir um repositório no GitHub, use o comando:  
+git clone https://github.com/usuario/nome-do-repositorio.git  
+Isso cria uma cópia do projeto no seu computador. Depois de editar ou criar arquivos, adicione-os com:  
+git add .  
+O ponto adiciona todos os arquivos modificados. Em seguida, faça o commit com uma mensagem explicando as mudanças:  
+git commit -m "mensagem explicando o que foi alterado"  
+Por exemplo:  
+git commit -m "Adiciona página inicial e estilo CSS"  
+Depois, envie tudo para o GitHub com:  
+git push origin main  
+“origin” é o nome do repositório remoto e “main” é a branch principal. Caso alguém tenha feito alterações no GitHub e você queira atualizar seu repositório local, use:  
+git pull origin main  
+
+## Como adicionar colaboradores a um repositório privado
+Para adicionar colaboradores, vá até o repositório no GitHub, clique em Settings (Configurações), depois em Collaborators (ou Manage Access). Clique em Invite a collaborator, digite o nome de usuário ou o e-mail da pessoa e confirme. O colaborador precisa aceitar o convite para ter acesso ao repositório. Apenas administradores podem adicionar colaboradores em repositórios privados.
+
+##  Como usar o GitFluence
+O GitFluence é uma ferramenta online que ajuda a encontrar o comando Git correto. Basta acessar o site https://gitfluence.com/, digitar o que você quer fazer (por exemplo: “enviar commits para o GitHub”) e ele mostra o comando certo, como git push origin main. É uma forma simples de aprender e lembrar os comandos do Git.
+
 ---
 
 **🚀 Próximos passos:**  
